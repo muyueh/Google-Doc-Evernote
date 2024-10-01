@@ -1,0 +1,22 @@
+
+{
+  "manifest_version": 3,
+  "name": "Save to Google Sheets",
+  "version": "1.2",
+  "description": "A Chrome extension to save selected text, website URL, and timestamp directly to a Google Sheets document.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://script.google.com/macros/s/AKfycbwNymh0ke2brkuMz5RwZhixM0ZBMiEnNxNGEIwLLRqSxL_sOgAfF-T6DzvRfc0nLkis/exec"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Save Selected Text to Google Sheets"
+  }
+}
